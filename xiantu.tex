@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{external}
+
+\begin{document}
+	\begin{tikzpicture}
+	\draw (-1,0) -- (1,0) node[right] {C};
+	\draw (1,0) -- (1,1) node[above] {B};
+	\draw (-1,0) node[left] {A} -- (1,1);
+	\draw (1,0.3) -- (0.7,0.3);
+	\draw (0.7,0) -- (0.7,0.3);
+ 	\end{tikzpicture}
+\end{document}
