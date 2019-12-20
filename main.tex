@@ -1,8 +1,10 @@
-\documentclass{beamer}
+\documentclass[no-math,xcolor=table]{beamer}
 
 %导言区
 \usepackage[UTF8,noindent]{ctexcap}	
 \setCJKsansfont[ItalicFont={华文新魏}]{黑体}
+\usecolortheme{crane}
+
 
 \usepackage{tikz}
 \bibliographystyle{apalike}
@@ -92,6 +94,24 @@
 			\end{center}
 		\end{thm}
 	\end{frame}
+	\begin{frame}{勾股数}
+		满足式\ref{eq:gougu}的整数称为\emph{勾股数}。第\ref{eq:gougu}节所说毕达哥拉斯学派得到的三元数组就是勾股数。
+		
+		\begin{table}
+			\centering
+			% 颜色 craneorange 是在 crane 色彩主题中定义的
+			\rowcolors{2}{craneorange!25}{craneorange!50}
+			\begin{tabular}{rrr}
+				\rowcolor{craneorange}直角边 $a$ & 直角边 $b$ & 斜边 $c$\\
+				3 & 4 & 5 \\
+				5 & 12 & 13 \\
+				7 & 24 & 25 \\
+				8 & 15 & 17 \\
+			\end{tabular}
+			\caption{较小的几组勾股数}
+		\end{table}
+		\end{frame}
+	
 	\begin{frame}{参考文献}
 		\bibliography{math}
 		\nocite{Shiye}
